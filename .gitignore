@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.log
+NotoSansCJKtc-Regular.otf
+lab06_turtle_soup_chatbot.unexecuted.ipynb
+.gradio/
