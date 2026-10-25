@@ -13,7 +13,7 @@ ai_source = "AI 現煮" if "AI 現煮" in ai_intro else "店內菜單（AI 出�
 reveal = next(e for e in log if e.get("event") == "reveal")["a"]
 
 def qa_block(items):
-    return "\n".join(f"> **客人：** {e['q']}  \n> **老湯：** {e['a'].splitlines()[0]}" for e in items)
+    return "  \n".join(f"> **客人：** {e['q']}  \n> **老湯：** {e['a'].splitlines()[0]}" for e in items)
 
 first3, rest = qa[:3], qa[3:-1]   # 最後一題是 AI 現煮那局問的
 
